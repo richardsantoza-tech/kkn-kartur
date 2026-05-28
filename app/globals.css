@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette (Kartur + Wharton-inspired) */
+  --color-navy: #010955;
+  --color-navy-700: #0a1573;
+  --color-navy-600: #1b2a8f;
+  --color-navy-100: #d6daf3;
+  --color-navy-50: #eef0fb;
+  --color-amber: #fcb900;
+  --color-amber-600: #e0a500;
+  --color-pink: #cc3366;
+  --color-pink-600: #b32a59;
+  --color-ink: #1f2333;
+  --color-muted: #69727d;
+  --color-canvas: #f4f5f7;
+
+  /* Typography */
+  --font-sans:
+    var(--font-roboto), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-amber);
+  color: var(--color-navy);
+}
