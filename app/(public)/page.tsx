@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
@@ -5,6 +7,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
 import { NewsCard } from "@/components/public/NewsCard";
 import { ProgramCard } from "@/components/public/ProgramCard";
+import { HeroSlideshow } from "@/components/public/HeroSlideshow";
 import {
   getInfoSessions,
   getLatestNews,
@@ -14,9 +17,25 @@ import {
 import { formatDate, pickLocalized } from "@/lib/i18n-content";
 import type { Locale } from "@/i18n/config";
 
+const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
+
+function getHeroSlides(): string[] {
+  const dir = path.join(process.cwd(), "public", "hero");
+  try {
+    return fs
+      .readdirSync(dir)
+      .filter((f) => IMAGE_EXTS.has(path.extname(f).toLowerCase()))
+      .sort()
+      .map((f) => `/hero/${f}`);
+  } catch {
+    return [];
+  }
+}
+
 export default async function HomePage() {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations("Home");
+  const heroSlides = getHeroSlides();
   const [news, programs, sessions, stats] = await Promise.all([
     getLatestNews(3),
     getPrograms(),
@@ -35,17 +54,10 @@ export default async function HomePage() {
     <>
       {/* Hero */}
       <section className="relative flex min-h-dvh items-center overflow-hidden bg-navy text-white">
-        <div className="absolute inset-0 opacity-50">
-          <Image
-            src="/info-sessions/session-1.jpeg"
-            alt=""
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
+        <div className="absolute inset-0 opacity-65">
+          <HeroSlideshow slides={heroSlides} />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/75 to-navy/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/55 to-navy/10" />
         <Container className="relative py-20 sm:py-28">
           <div className="max-w-2xl">
             <p className="text-sm font-bold uppercase tracking-wide text-peach">

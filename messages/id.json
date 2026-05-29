@@ -1,6 +1,6 @@
 {
   "Common": {
-    "siteName": "Pusaka",
+    "siteName": "PUSAKA",
     "siteFullName": "Pusat Layanan Studi Lanjut Karangturi",
     "schoolName": "SMA Karangturi Semarang",
     "readMore": "Baca selengkapnya",
@@ -24,27 +24,27 @@
   "Home": {
     "heroEyebrow": "Pusat Layanan Studi Lanjut Karangturi",
     "heroTitle": "Mewujudkan Masa Depan Pendidikan Tinggimu",
-    "heroSubtitle": "Pusaka membantu siswa Karangturi memahami, memilih, dan mempersiapkan diri untuk perguruan tinggi di dalam maupun luar negeri.",
+    "heroSubtitle": "PUSAKA membantu siswa Karangturi memahami, memilih, dan mempersiapkan diri untuk perguruan tinggi di dalam maupun luar negeri.",
     "heroCtaPrimary": "Sampaikan Aspirasi",
     "heroCtaSecondary": "Lihat Program",
     "getToKnowEyebrow": "Kenali Kami",
-    "getToKnowTitle": "Apa itu Pusaka?",
-    "getToKnowBody": "Pusaka adalah departemen layanan studi lanjut SMA Karangturi yang mendampingi siswa dalam menjelajahi pilihan universitas, jurusan, beasiswa, dan jalur karier. Tonton video singkat berikut untuk mengenal kami lebih dekat.",
+    "getToKnowTitle": "Apa itu PUSAKA?",
+    "getToKnowBody": "PUSAKA merupakan salah satu bagian dari Sekolah Karangturi yang siap membantu dalam studi lanjut siswa-siswi dalam menjelajahi pilihan universitas, jurusan, beasiswa, dan jalur karier yang paling sesuai. Tonton video singkat berikut untuk mengenal kami lebih dekat.",
     "offerTitle": "Apa yang Kami Tawarkan",
     "offerSubtitle": "Program dan layanan untuk mendukung perjalanan studi lanjutmu.",
-    "statsTitle": "Pusaka dalam Angka",
+    "statsTitle": "PUSAKA dalam Angka",
     "statUniversities": "Universitas Mitra",
     "statStudents": "Siswa Terbantu",
     "statSessions": "Info Session",
     "statScholarships": "Info Beasiswa",
     "latestNewsTitle": "Berita Terbaru",
-    "latestNewsSubtitle": "Kabar terbaru seputar studi lanjut dari Pusaka.",
+    "latestNewsSubtitle": "Kabar terbaru seputar studi lanjut dari PUSAKA.",
     "latestNewsCta": "Lihat semua berita",
     "infoHighlightTitle": "Kegiatan & Info Session",
     "infoHighlightSubtitle": "Momen dari sesi informasi dan kegiatan yang telah kami selenggarakan.",
     "infoHighlightCta": "Lihat galeri",
     "aspirasiCtaTitle": "Punya ide atau masukan?",
-    "aspirasiCtaBody": "Kami ingin mendengar aspirasimu untuk Pusaka dan sekolah. Sampaikan idemu sekarang.",
+    "aspirasiCtaBody": "Kami ingin mendengar aspirasimu untuk PUSAKA dan sekolah. Sampaikan idemu sekarang.",
     "aspirasiCtaButton": "Sampaikan Aspirasi"
   },
   "News": {
@@ -79,7 +79,7 @@
     "submit": "Kirim Aspirasi",
     "submitting": "Mengirim…",
     "successTitle": "Terima kasih!",
-    "successBody": "Aspirasimu telah kami terima. Tim Pusaka akan meninjaunya.",
+    "successBody": "Aspirasimu telah kami terima. Tim PUSAKA akan meninjaunya.",
     "successAgain": "Kirim aspirasi lain",
     "errorRequired": "Wajib diisi",
     "errorGeneric": "Terjadi kesalahan. Silakan coba lagi.",
@@ -98,12 +98,12 @@
   },
   "InfoSessions": {
     "title": "Info Session & Kegiatan",
-    "subtitle": "Dokumentasi sesi informasi dan kegiatan yang telah diselenggarakan Pusaka.",
+    "subtitle": "Dokumentasi sesi informasi dan kegiatan yang telah diselenggarakan PUSAKA.",
     "empty": "Belum ada dokumentasi kegiatan.",
     "heldOn": "Diselenggarakan"
   },
   "About": {
-    "title": "Tentang Pusaka",
+    "title": "Tentang PUSAKA",
     "subtitle": "Pusat Layanan Studi Lanjut Karangturi.",
     "missionTitle": "Misi Kami",
     "missionBody": "Mendampingi setiap siswa Karangturi dalam mengambil keputusan studi lanjut yang tepat melalui informasi, bimbingan, dan kesempatan yang setara.",
@@ -116,6 +116,7 @@
     "contact": "Kontak",
     "follow": "Ikuti Kami",
     "schoolSite": "Situs Sekolah",
-    "rights": "Seluruh hak cipta dilindungi."
+    "rights": "Seluruh hak cipta dilindungi.",
+    "campusLocations": "Lokasi Kampus"
   }
 }

@@ -1,6 +1,6 @@
 {
   "Common": {
-    "siteName": "Pusaka",
+    "siteName": "PUSAKA",
     "siteFullName": "Karangturi Further Study Guidance Center",
     "schoolName": "Karangturi Senior High School, Semarang",
     "readMore": "Read more",
@@ -24,27 +24,27 @@
   "Home": {
     "heroEyebrow": "Karangturi Further Study Guidance Center",
     "heroTitle": "Shaping Your Higher-Education Future",
-    "heroSubtitle": "Pusaka helps Karangturi students understand, choose, and prepare for universities at home and abroad.",
+    "heroSubtitle": "PUSAKA helps Karangturi students understand, choose, and prepare for universities at home and abroad.",
     "heroCtaPrimary": "Share Your Aspiration",
     "heroCtaSecondary": "View Programs",
     "getToKnowEyebrow": "Get to Know Us",
-    "getToKnowTitle": "What is Pusaka?",
-    "getToKnowBody": "Pusaka is Karangturi's further-study service that guides students in exploring university options, majors, scholarships, and career paths. Watch this short video to get to know us.",
+    "getToKnowTitle": "What is PUSAKA?",
+    "getToKnowBody": "PUSAKA is one of the departments of Karangturi School, dedicated to helping students explore and prepare for their further studies — from choosing the right university and major to finding scholarships and career paths that truly fit them. Watch this short video to get to know us.",
     "offerTitle": "What We Offer",
     "offerSubtitle": "Programs and services to support your further-study journey.",
-    "statsTitle": "Pusaka by the Numbers",
+    "statsTitle": "PUSAKA by the Numbers",
     "statUniversities": "Partner Universities",
     "statStudents": "Students Helped",
     "statSessions": "Info Sessions",
     "statScholarships": "Scholarship Listings",
     "latestNewsTitle": "Latest News",
-    "latestNewsSubtitle": "The latest further-study news from Pusaka.",
+    "latestNewsSubtitle": "The latest further-study news from PUSAKA.",
     "latestNewsCta": "View all news",
     "infoHighlightTitle": "Activities & Info Sessions",
     "infoHighlightSubtitle": "Moments from the information sessions and activities we have held.",
     "infoHighlightCta": "View gallery",
     "aspirasiCtaTitle": "Have an idea or feedback?",
-    "aspirasiCtaBody": "We would love to hear your aspirations for Pusaka and the school. Share your idea now.",
+    "aspirasiCtaBody": "We would love to hear your aspirations for PUSAKA and the school. Share your idea now.",
     "aspirasiCtaButton": "Share Your Aspiration"
   },
   "News": {
@@ -79,7 +79,7 @@
     "submit": "Submit Aspiration",
     "submitting": "Submitting…",
     "successTitle": "Thank you!",
-    "successBody": "We have received your aspiration. The Pusaka team will review it.",
+    "successBody": "We have received your aspiration. The PUSAKA team will review it.",
     "successAgain": "Submit another aspiration",
     "errorRequired": "Required",
     "errorGeneric": "Something went wrong. Please try again.",
@@ -98,12 +98,12 @@
   },
   "InfoSessions": {
     "title": "Info Sessions & Activities",
-    "subtitle": "Documentation of information sessions and activities held by Pusaka.",
+    "subtitle": "Documentation of information sessions and activities held by PUSAKA.",
     "empty": "No activity documentation yet.",
     "heldOn": "Held on"
   },
   "About": {
-    "title": "About Pusaka",
+    "title": "About PUSAKA",
     "subtitle": "Karangturi Further Study Guidance Center.",
     "missionTitle": "Our Mission",
     "missionBody": "To guide every Karangturi student in making the right further-study decisions through information, mentoring, and equal opportunity.",
@@ -116,6 +116,7 @@
     "contact": "Contact",
     "follow": "Follow Us",
     "schoolSite": "School Website",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "campusLocations": "Campus Locations"
   }
 }

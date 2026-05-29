@@ -30,14 +30,21 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy-100 bg-white/95 backdrop-blur">
-      <Container className="flex h-20 items-center justify-between gap-4">
-        <Link href="/" onClick={() => setOpen(false)}>
+      <Container className="flex h-24 items-center justify-between gap-4">
+        <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-3">
           <Image
-            src="/pusaka-logo.png"
-            alt="Pusaka"
-            width={160}
-            height={54}
-            className="h-14 w-auto"
+            src="/logo-karangturi-3.png"
+            alt="SMA Karangturi"
+            width={64}
+            height={64}
+            className="h-16 w-auto"
+          />
+          <Image
+            src="/Logo Pusaka (New).png"
+            alt="PUSAKA"
+            width={380}
+            height={128}
+            className="h-32 w-auto"
           />
         </Link>
 

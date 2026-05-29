@@ -6,13 +6,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://pusaka.karangturi.sch.id"),
   title: {
-    default: "Pusaka — Pusat Layanan Studi Lanjut Karangturi",
-    template: "%s — Pusaka",
+    default: "PUSAKA — Pusat Layanan Studi Lanjut Karangturi",
+    template: "%s — PUSAKA",
   },
   description:
-    "Pusat Layanan Studi Lanjut Karangturi (Pusaka) membantu siswa SMA Karangturi memahami, memilih, dan mempersiapkan diri untuk perguruan tinggi di dalam dan luar negeri.",
+    "Pusat Layanan Studi Lanjut Karangturi (PUSAKA) membantu siswa SMA Karangturi memahami, memilih, dan mempersiapkan diri untuk perguruan tinggi di dalam dan luar negeri.",
   icons: {
-    icon: "/pusaka-logo.png",
+    icon: "/Logo Pusaka (New).png",
   },
 };
 
@@ -21,7 +21,7 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const locale = await getLocale();
   return (
-    <html lang={locale} className="h-full">
+    <html lang={locale} className="h-full" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
