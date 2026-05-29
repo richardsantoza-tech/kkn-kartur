@@ -12,9 +12,10 @@ import {
   getSiteStats,
 } from "@/lib/data";
 import { formatDate, pickLocalized } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/config";
 
 export default async function HomePage() {
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("Home");
   const [news, programs, sessions, stats] = await Promise.all([
     getLatestNews(3),
@@ -33,8 +34,8 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy text-white">
-        <div className="absolute inset-0 opacity-25">
+      <section className="relative flex min-h-dvh items-center overflow-hidden bg-navy text-white">
+        <div className="absolute inset-0 opacity-50">
           <Image
             src="/info-sessions/session-1.jpeg"
             alt=""
@@ -44,10 +45,10 @@ export default async function HomePage() {
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/75 to-navy/20" />
         <Container className="relative py-20 sm:py-28">
           <div className="max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-wide text-amber">
+            <p className="text-sm font-bold uppercase tracking-wide text-peach">
               {t("heroEyebrow")}
             </p>
             <h1 className="mt-3 text-4xl font-extrabold leading-tight text-white sm:text-5xl">
@@ -112,7 +113,7 @@ export default async function HomePage() {
           <dl className="mt-10 grid grid-cols-2 gap-8 text-center lg:grid-cols-4">
             {statItems.map((s) => (
               <div key={s.label}>
-                <dd className="text-4xl font-extrabold text-amber sm:text-5xl">
+                <dd className="text-4xl font-extrabold text-peach sm:text-5xl">
                   {s.value}+
                 </dd>
                 <dt className="mt-2 text-sm font-medium text-navy-100">
@@ -192,7 +193,7 @@ export default async function HomePage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent" />
                     <div className="absolute inset-x-0 bottom-0 p-4">
                       {s.session_date && (
-                        <p className="text-xs font-medium text-amber">
+                        <p className="text-xs font-medium text-peach">
                           {formatDate(s.session_date, locale)}
                         </p>
                       )}

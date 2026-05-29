@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { getPrograms } from "@/lib/data";
 import { pickLocalized } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/config";
 
 const SCHOOL_URL = "https://karangturi.sch.id";
 
@@ -13,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function AboutPage() {
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("About");
   const tc = await getTranslations("Common");
   const tn = await getTranslations("Nav");
@@ -22,19 +23,19 @@ export default async function AboutPage() {
   return (
     <div className="py-12 sm:py-16">
       <Container className="max-w-3xl">
-        <h1 className="text-4xl font-extrabold text-navy sm:text-5xl">
+        <h1 className="text-4xl font-extrabold text-amber sm:text-5xl">
           {t("title")}
         </h1>
         <p className="mt-3 text-muted">{t("subtitle")}</p>
 
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-navy">{t("missionTitle")}</h2>
+          <h2 className="text-2xl font-bold text-amber">{t("missionTitle")}</h2>
           <p className="mt-3 leading-relaxed text-ink">{t("missionBody")}</p>
         </section>
 
         {programs.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-2xl font-bold text-navy">{t("whatTitle")}</h2>
+            <h2 className="text-2xl font-bold text-amber">{t("whatTitle")}</h2>
             <ul className="mt-4 space-y-3">
               {programs.map((p) => (
                 <li
@@ -54,7 +55,7 @@ export default async function AboutPage() {
         )}
 
         <section className="mt-10 rounded-xl bg-navy-50 p-6">
-          <h2 className="text-2xl font-bold text-navy">{t("contactTitle")}</h2>
+          <h2 className="text-2xl font-bold text-amber">{t("contactTitle")}</h2>
           <p className="mt-3 text-ink">{tc("schoolName")}</p>
           <p className="mt-1">
             <a

@@ -4,6 +4,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { getInfoSessions } from "@/lib/data";
 import { formatDate, pickLocalized } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("InfoSessions");
@@ -11,14 +12,14 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function InfoSessionsPage() {
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("InfoSessions");
   const sessions = await getInfoSessions();
 
   return (
     <div className="py-12 sm:py-16">
       <Container>
-        <h1 className="text-4xl font-extrabold text-navy sm:text-5xl">
+        <h1 className="text-4xl font-extrabold text-amber sm:text-5xl">
           {t("title")}
         </h1>
         <p className="mt-3 max-w-2xl text-muted">{t("subtitle")}</p>
@@ -39,11 +40,11 @@ export default async function InfoSessionsPage() {
               return (
                 <section key={s.id}>
                   {s.session_date && (
-                    <p className="text-sm font-bold uppercase tracking-wide text-pink">
+                    <p className="text-sm font-bold uppercase tracking-wide text-amber">
                       {t("heldOn")} {formatDate(s.session_date, locale)}
                     </p>
                   )}
-                  <h2 className="mt-1 text-2xl font-bold text-navy">{title}</h2>
+                  <h2 className="mt-1 text-2xl font-bold text-amber">{title}</h2>
                   <p className="mt-2 max-w-3xl text-muted">{description}</p>
                   {s.gallery.length > 0 && (
                     <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

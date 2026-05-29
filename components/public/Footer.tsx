@@ -3,8 +3,6 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 
-const LOGO =
-  "https://karangturi.sch.id/wp-content/uploads/2024/09/LOGO-GAOK-WEB-2.png";
 const SCHOOL_URL = "https://karangturi.sch.id";
 
 export async function Footer() {
@@ -24,28 +22,20 @@ export async function Footer() {
     <footer className="mt-auto bg-navy text-navy-100">
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-3">
-            <Image
-              src={LOGO}
-              alt={tc("siteName")}
-              width={44}
-              height={44}
-              className="h-10 w-auto rounded bg-white p-1"
-            />
-            <div className="leading-tight">
-              <p className="text-lg font-extrabold text-white">
-                {tc("siteName")}
-              </p>
-              <p className="text-xs text-navy-100">{tc("siteFullName")}</p>
-            </div>
-          </div>
+          <Image
+            src="/pusaka-logo.png"
+            alt="Pusaka"
+            width={140}
+            height={48}
+            className="h-12 w-auto brightness-0 invert"
+          />
           <p className="mt-4 max-w-md text-sm text-navy-100/80">
             {t("tagline")}
           </p>
         </div>
 
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-wide text-amber">
+          <h2 className="text-sm font-bold uppercase tracking-wide text-peach">
             {t("quickLinks")}
           </h2>
           <ul className="mt-3 space-y-2 text-sm">
@@ -63,7 +53,7 @@ export async function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-wide text-amber">
+          <h2 className="text-sm font-bold uppercase tracking-wide text-peach">
             {t("contact")}
           </h2>
           <ul className="mt-3 space-y-2 text-sm text-navy-100/90">

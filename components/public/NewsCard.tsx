@@ -5,16 +5,17 @@ import { Badge } from "@/components/ui/Badge";
 import { NEWS_CATEGORY_LABEL_KEY } from "@/lib/constants";
 import { formatDate, pickLocalized } from "@/lib/i18n-content";
 import type { NewsPost } from "@/lib/types";
+import type { Locale } from "@/i18n/config";
 
 export async function NewsCard({ post }: { post: NewsPost }) {
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("News");
   const tc = await getTranslations("Common");
   const title = pickLocalized(locale, post.title, post.title_en);
   const summary = pickLocalized(locale, post.summary, post.summary_en);
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-lg border border-navy-100 bg-white transition-shadow hover:shadow-lg">
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-clay">
       <Link href={`/news/${post.slug}`} className="block">
         <div className="relative aspect-[16/10] overflow-hidden bg-navy-50">
           {post.cover_image_url ? (

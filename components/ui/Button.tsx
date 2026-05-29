@@ -5,11 +5,11 @@ import type { ComponentProps, ReactNode } from "react";
 type Variant = "primary" | "secondary" | "ghost" | "ghostLight";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded px-5 py-2.5 text-sm font-semibold transition-colors disabled:opacity-60";
+  "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-colors disabled:opacity-60";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-navy text-white hover:bg-navy-700",
-  secondary: "bg-amber text-navy hover:bg-amber-600",
+  primary: "bg-amber text-white hover:bg-amber-600",
+  secondary: "bg-peach text-navy hover:bg-peach-600",
   ghost: "border border-navy-100 text-navy hover:bg-navy-50",
   ghostLight: "border border-white/40 text-white hover:bg-white/10",
 };

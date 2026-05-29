@@ -50,7 +50,7 @@ export function AdminSidebar({ profile }: { profile: Profile | null }) {
     <aside className="flex w-60 shrink-0 flex-col bg-navy text-white">
       <div className="border-b border-white/10 px-5 py-5">
         <p className="text-lg font-extrabold">
-          Pusaka <span className="text-amber">Admin</span>
+          Pusaka <span className="text-peach">Admin</span>
         </p>
         {profile && (
           <p className="mt-1 truncate text-xs text-navy-100">

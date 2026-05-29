@@ -30,7 +30,7 @@ export function CategoryTabs() {
           className={clsx(
             "rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors",
             active === tab.key
-              ? "border-navy bg-navy text-white"
+              ? "border-amber bg-amber text-white"
               : "border-navy-100 bg-white text-navy hover:bg-navy-50",
           )}
         >

@@ -36,7 +36,7 @@ export function LocaleSwitcher() {
           className={clsx(
             "px-2.5 py-1 transition-colors",
             l === current
-              ? "bg-navy text-white"
+              ? "bg-amber text-white"
               : "bg-white text-navy hover:bg-navy-50",
           )}
         >

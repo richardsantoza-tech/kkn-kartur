@@ -63,7 +63,7 @@ export function LoginForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full rounded bg-navy py-2.5 text-sm font-bold text-amber transition-colors hover:bg-navy-700 disabled:opacity-60"
+        className="w-full rounded bg-amber py-2.5 text-sm font-bold text-white transition-colors hover:bg-amber-600 disabled:opacity-60"
       >
         {loading ? "Memproses…" : "Masuk"}
       </button>

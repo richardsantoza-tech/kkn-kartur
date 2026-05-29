@@ -10,12 +10,8 @@ import { Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 
-const LOGO =
-  "https://karangturi.sch.id/wp-content/uploads/2024/09/LOGO-GAOK-WEB-2.png";
-
 export function Header() {
   const t = useTranslations("Nav");
-  const tc = useTranslations("Common");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -34,27 +30,15 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy-100 bg-white/95 backdrop-blur">
-      <Container className="flex h-16 items-center justify-between gap-4">
-        <Link
-          href="/"
-          className="flex items-center gap-2.5"
-          onClick={() => setOpen(false)}
-        >
+      <Container className="flex h-20 items-center justify-between gap-4">
+        <Link href="/" onClick={() => setOpen(false)}>
           <Image
-            src={LOGO}
-            alt={tc("siteName")}
-            width={40}
-            height={40}
-            className="h-9 w-auto"
+            src="/pusaka-logo.png"
+            alt="Pusaka"
+            width={160}
+            height={54}
+            className="h-14 w-auto"
           />
-          <span className="flex flex-col leading-tight">
-            <span className="text-base font-extrabold text-navy">
-              {tc("siteName")}
-            </span>
-            <span className="hidden text-[10px] font-medium uppercase tracking-wide text-muted sm:block">
-              {tc("schoolName")}
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

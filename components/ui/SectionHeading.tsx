@@ -24,7 +24,7 @@ export function SectionHeading({
         <p
           className={clsx(
             "text-sm font-bold uppercase tracking-wide",
-            light ? "text-amber" : "text-pink",
+            light ? "text-peach" : "text-amber",
           )}
         >
           {eyebrow}
@@ -33,7 +33,7 @@ export function SectionHeading({
       <h2
         className={clsx(
           "mt-1 text-3xl font-extrabold sm:text-4xl",
-          light && "text-white",
+          light ? "text-white" : "text-amber",
         )}
       >
         {title}

@@ -11,7 +11,7 @@ export function Badge({
   return (
     <span
       className={clsx(
-        "inline-block rounded bg-navy px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white",
+        "inline-block rounded bg-peach px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white",
         className,
       )}
     >

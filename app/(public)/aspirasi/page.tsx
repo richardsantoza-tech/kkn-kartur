@@ -13,7 +13,7 @@ export default async function AspirasiPage() {
   return (
     <div className="py-12 sm:py-16">
       <Container className="max-w-2xl">
-        <h1 className="text-4xl font-extrabold text-navy sm:text-5xl">
+        <h1 className="text-4xl font-extrabold text-amber sm:text-5xl">
           {t("title")}
         </h1>
         <p className="mt-3 text-muted">{t("subtitle")}</p>

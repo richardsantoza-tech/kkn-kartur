@@ -2,9 +2,10 @@ import Image from "next/image";
 import { getLocale } from "next-intl/server";
 import { pickLocalized } from "@/lib/i18n-content";
 import type { Program } from "@/lib/types";
+import type { Locale } from "@/i18n/config";
 
 export async function ProgramCard({ program }: { program: Program }) {
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const title = pickLocalized(locale, program.title, program.title_en);
   const description = pickLocalized(
     locale,
@@ -13,7 +14,7 @@ export async function ProgramCard({ program }: { program: Program }) {
   );
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-lg border border-navy-100 bg-white transition-shadow hover:shadow-md">
+    <article className="flex flex-col overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-clay">
       <div className="relative aspect-[16/9] overflow-hidden bg-navy-50">
         {program.cover_image_url && (
           <Image

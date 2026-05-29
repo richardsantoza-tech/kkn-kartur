@@ -9,6 +9,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { getNewsBySlug } from "@/lib/data";
 import { NEWS_CATEGORY_LABEL_KEY } from "@/lib/constants";
 import { formatDate, pickLocalized } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/config";
 
 export async function generateMetadata({
   params,
@@ -36,7 +37,7 @@ export default async function NewsDetailPage({
   const post = await getNewsBySlug(slug);
   if (!post) notFound();
 
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("News");
   const tc = await getTranslations("Common");
   const title = pickLocalized(locale, post.title, post.title_en);
@@ -63,7 +64,7 @@ export default async function NewsDetailPage({
           )}
         </div>
 
-        <h1 className="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+        <h1 className="mt-3 text-3xl font-extrabold leading-tight text-amber sm:text-4xl">
           {title}
         </h1>
 
